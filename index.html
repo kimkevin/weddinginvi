@@ -162,13 +162,18 @@
     }
 
     .account-table-header {
+      color: #63463c;
       background-color: #eae6e3;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
+    }
+
+    .account-table-header td {
+      padding: 2px 0;
     }
 
     .account-table-item {
       background-color: #fff;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       line-height: 1.4rem;
     }
 
@@ -185,7 +190,7 @@
       background: #f2efed;
       color: #c6482a;
       border-radius: 2px;
-      font-size: 12px;
+      font-size: 10px;
       line-height: 24px;
       border: none;
       text-align: right;
@@ -197,9 +202,14 @@
 
     .btn-share {
       background: none;
-      font-size: 13px;
+      font-size: 12px;
       line-height: 24px;
       border: none;
+    }
+
+    .share-icon {
+      width: 18px;
+      height: 18px;
     }
 
     .date-container {
@@ -574,7 +584,7 @@
       <table class="table table-responsive">
         <tbody>
           <tr class="account-table-header">
-            <td colspan="2" style="color: #63463c;">신랑측 계좌번호</td>
+            <td colspan="2">신랑측 계좌번호</td>
           </tr>
           <tr class="account-table-item">
             <td>카카오뱅크 3333-01-1587857<br>김성운</td>
@@ -594,7 +604,7 @@
       <table class="table table-responsive">
         <tbody>
           <tr class="account-table-header">
-            <td colspan='2' style="color: #63463c;">신부측 계좌번호</td>
+            <td colspan='2'>신부측 계좌번호</td>
           </tr>
           <tr class="account-table-item">
             <td>하나 177-890254-22207<br>승도현</td>
@@ -614,9 +624,11 @@
 
     <div class="share-link" style="background-color: #fff;">
       <div>
+        <img class="share-icon" src="images/ic_kakaotalk.png" />
         <button class="btn-share" onclick="sendLink()">카카오톡으로 공유하기</button>
       </div>
       <div>
+        <img class="share-icon" src="images/ic_link.png" />
         <button class="btn-share" onclick="copyToClipboard('https://kimkevin.github.io/weddinginvi')">
           청첩장 주소 복사하기</button>
       </div>
