@@ -44,9 +44,10 @@
 
     .app {
       background-color: #fff;
+      color: #333;
     }
 
-    .title {
+    .top-title {
       padding: 48px 16px 48px 16px;
     }
 
@@ -58,15 +59,67 @@
       background-color: #f3f3f3;
     }
 
-    div .transfortation {
+    .section-title {
+      color: #a96b6d;
+      line-height: 2.0rem;
+      font-size: 1.3rem;
+    }
+
+    .section-subtitle {
+      color: #a96b6d;
+      line-height: 2.0rem;
+      font-size: 0.9rem;
+    }
+
+    .section-desc {
+      color: #a96b6d;
+      line-height: 2.0rem;
+      font-size: 0.5rem;
+    }
+
+    .transfortation {
       text-align: left;
-      margin-left: 40px;
+      padding: 0 36px;
+    }
+
+    .transfortation .t-container {
+      margin-top: 24px;
+    }
+
+    .transfortation .t-title {
+      color: #a96b6d;
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+
+    .transfortation .t-content {
+      font-size: .9rem;
+      line-height: 1.8rem;
     }
 
     .column {
       flex: 25%;
       max-width: 25%;
       padding: 0 4px;
+    }
+
+    .cal-table {
+      font-size: 0.8rem;
+      width: 100%;
+      line-height: 2.5rem;
+    }
+
+    .cal-table tbody tr td:first-child {
+      color: #c6482a !important;
+    }
+
+    .cal-dday {
+      color: #fff;
+      /* width: 30px; */
+      height: 30px;
+      line-height: 30px;
+      background: #a96b6d;
+      border-radius: 30px;
     }
 
     /* Extra small devices \(portrait phones, less than 576px) */
@@ -99,7 +152,7 @@
 <body>
   <div class="app">
 
-    <div class="title">
+    <div class="top-title">
       <div class="row">
         <div class="col-5">김용준<br>Kevin</div>
         <div class="col-2">5/22</div>
@@ -143,80 +196,89 @@
 
     </div>
 
-    <div style="padding-top: 64px;padding-bottom: 64px;">
-      <div>5월 22일</div>
-      <div>일요일 오후 2시 30분</div>
+    <div style="padding-top: 64px;padding-bottom: 64px;margin-left: 30px;margin-right: 30px;">
 
-      <table class="table table-responsive" style="border-top: 1px solid #ddcccc;border-bottom: 1px solid #ddcccc;">
-        <tbody>
-          <tr>
-            <td class="day">S</td>
-            <td class="day">M</td>
-            <td class="day">T</td>
-            <td class="day">W</td>
-            <td class="day">T</td>
-            <td class="day">F</td>
-            <td class="day">S</td>
-          </tr>
+      <div style="padding: 20px 0;">
+        <div class="section_title">5월 22일</div>
+        <div class="section_subtitle">일요일 오후 2시 30분</div>
+      </div>
 
-          <tr>
-            <td class="day">1</td>
-            <td class="day">2</td>
-            <td class="day">3</td>
-            <td class="day">4</td>
-            <td class="day">5</td>
-            <td class="day">6</td>
-            <td class="day">7</td>
-          </tr>
+      <div style="border-top: 1px solid #ddcccc;border-bottom: 1px solid #ddcccc;padding: 0 16px;line-height: 2.0rem;">
+        <table class="cal-table table-responsive" style="margin: 24px 0;text-align: center;">
+          <tbody>
+            <tr>
+              <td class="day">S</td>
+              <td class="day">M</td>
+              <td class="day">T</td>
+              <td class="day">W</td>
+              <td class="day">T</td>
+              <td class="day">F</td>
+              <td class="day">S</td>
+            </tr>
 
-          <tr>
-            <td class="day">8</td>
-            <td class="day">9</td>
-            <td class="day">10</td>
-            <td class="day">11</td>
-            <td class="day">12</td>
-            <td class="day">13</td>
-            <td class="day">14</td>
-          </tr>
+            <tr>
+              <td class="day">1</td>
+              <td class="day">2</td>
+              <td class="day">3</td>
+              <td class="day">4</td>
+              <td class="day">5</td>
+              <td class="day">6</td>
+              <td class="day">7</td>
+            </tr>
 
-          <tr>
-            <td class="day">15</td>
-            <td class="day">16</td>
-            <td class="day">17</td>
-            <td class="day">18</td>
-            <td class="day">19</td>
-            <td class="day">20</td>
-            <td class="day">21</td>
-          </tr>
+            <tr>
+              <td class="day">8</td>
+              <td class="day">9</td>
+              <td class="day">10</td>
+              <td class="day">11</td>
+              <td class="day">12</td>
+              <td class="day">13</td>
+              <td class="day">14</td>
+            </tr>
 
-          <tr>
-            <td class="day">22</td>
-            <td class="day">23</td>
-            <td class="day">24</td>
-            <td class="day">25</td>
-            <td class="day">26</td>
-            <td class="day">27</td>
-            <td class="day">28</td>
-          </tr>
+            <tr>
+              <td class="day">15</td>
+              <td class="day">16</td>
+              <td class="day">17</td>
+              <td class="day">18</td>
+              <td class="day">19</td>
+              <td class="day">20</td>
+              <td class="day">21</td>
+            </tr>
 
-          <tr>
-            <td class="day">29</td>
-            <td class="day">30</td>
-            <td class="day">31</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+            <tr>
+              <td class="day">
+                <div class="cal-dday">
+                  <div>22</div>
+                </div>
+              </td>
+              <td class="day">23</td>
+              <td class="day">24</td>
+              <td class="day">25</td>
+              <td class="day">26</td>
+              <td class="day">27</td>
+              <td class="day">28</td>
+            </tr>
+
+            <tr>
+              <td class="day">29</td>
+              <td class="day">30</td>
+              <td class="day">31</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="gallery">
       <div class="row">
         <div class="col-12">
-          <div class="page-title">갤러리</div>
-          <div class="page-subtitle">GALLERY</div>
+          <div class="section-title">갤러리</div>
+          <div class="section-desc">G A L L E R Y</div>
 
           <div class="row">
             <a href="images/image1.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
@@ -271,45 +333,47 @@
         </div>
       </div>
 
-      <div class="gallery">
+      <div class="transfort">
         <div class="row">
           <div class="col-12">
-            <div class="page-title">오시는 길</div>
-            <div class="page-subtitle">LOCATION</div>
+            <div class="section-title">오시는 길</div>
+            <div class="section-desc">L O C A T I O N</div>
             <div>
               <div>드레스가든 4층 블리스돔</div>
               <div>서울 강남구 영동대로 707</div>
             </div>
 
-            <div>
-              <!-- 지도 -->
-
-            </div>
+            <div id="map" style="width:100%;height:300px;"></div>
           </div>
         </div>
       </div>
 
-      <div id="map" style="width:100%;height:300px;"></div>
+      <div class="transfortation">
+        <div class="t-container">
+          <div class="t-title">지하철</div>
+          <div class="t-content">7호선
+            <span style="font-weight: bold;">청담역</span>
+            하차
+            <br>12번 출구 도보 1분
+            <br>13번 출구 도보 150m
+          </div>
+        </div>
 
-      <div>
-        <div class="transfortation" style="color: #a96b6d;">지하철</div>
-        <div class="transfortation">7호선 청담역 하차</div>
-        <div class="transfortation">12번 출구 도보 1분</div>
-        <div class="transfortation">13번 출구 도보 150m</div>
+        <div class="t-container">
+          <div class="t-title">버 스</div>
+          <div class="t-content">청담역, 경기고교 정류장 하차
+            <br>지선버스 : 2413, 3217, 4318
+            <br>간선버스 : 143, 146, 352
+            <br>광역버스 : 9407, 9507, 9607
+          </div>
+        </div>
+
+        <div class="t-container">
+          <div class="t-title">자가용</div>
+          <div class="t-content">입력해야함(x)</div>
+        </div>
       </div>
 
-      <div>
-        <div class="transfortation" style="color: #a96b6d;">버 스</div>
-        <div class="transfortation">청담역, 경기고교 정류장 하차</div>
-        <div class="transfortation">지선버스 : 2413, 3217, 4318</div>
-        <div class="transfortation">간선버스 : 143, 146, 352</div>
-        <div class="transfortation">광역버스 : 9407, 9507, 9607</div>
-      </div>
-
-      <div>
-        <div class="transfortation" style="color: #a96b6d;">자가용</div>
-        <div class="transfortation">입력해야함(x)</div>
-      </div>
 
       <div style="padding: 0px 30px 0px 30px;margin-top: 100px;">
         <div style="margin-bottom: 10px;">마음 전하실 곳</div>
