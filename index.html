@@ -414,7 +414,7 @@
         <div class="section-desc">GALLERY</div>
       </div>
 
-      <div class="container gallery-item">
+      <div class="container" id="gallery-item">
         <div class="row">
           <div class="col-4">
             <img src="images/image1.jpeg" class="img-fluid" />
@@ -465,7 +465,8 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+              data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="images/image1.jpeg" class="d-block w-100" alt="...">
@@ -622,16 +623,16 @@
     crossorigin="anonymous"></script>
 
   <script>
-    var galleryModal = new bootstrap.Modal(
-      document.getElementById("galleryModalToggle"),
-      options
-    );
+    (function () {
+      var item = document.getElementById("gallery-item");
+      var myModal = new bootstrap.Modal(
+        document.getElementById("galleryModalToggle")
+      );
 
-    var item = document.getElementsByClassName("gallery-item")
-    item.addEventListener('click', function () {
-      console.log('hello')
-      galleryModal.show()
-    });
+      item.addEventListener("click", function () {
+        myModal.show();
+      });
+    })();
 
     Kakao.init("94ce40eafab4919d1e1a802149248104");
 
