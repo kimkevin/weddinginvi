@@ -104,6 +104,19 @@
       padding: 64px 0;
     }
 
+    .gallery .row {
+      padding-right: 12px;
+    }
+
+    .gallery .col-4 {
+      margin-bottom: 12px;
+      padding-right: 0;
+    }
+
+    .gallery .container {
+      margin-top: 30px;
+    }
+
     .transfortation {
       padding: 64px 0;
     }
@@ -141,13 +154,22 @@
       color: #c6482a !important;
     }
 
+    .cal-table .day {
+      padding: 0 0;
+      position: relative;
+      width: 45px;
+    }
+
     .cal-dday {
       color: #fff;
-      /* width: 30px; */
+      width: 30px;
       height: 30px;
       line-height: 30px;
       background: #a96b6d;
       border-radius: 30px;
+      position: absolute;
+      left: 8px;
+      top: 5px;
     }
 
     .account-table-header {
@@ -186,6 +208,40 @@
       border: none;
     }
 
+    .test {
+      display: flex;
+    }
+
+    .test .date {
+      flex: 1;
+      height: 3.75rem;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .test .date .month {
+      align-self: flex-start;
+    }
+
+    .test .date .divider {
+      text-align: center;
+      width: 14px;
+    }
+
+    .test .date .day {
+      align-self: flex-end;
+    }
+
+    .test .date .divider .divider2 {
+      margin: 0 auto;
+      width: 1px;
+      height: 60px;
+      background-color: #424242;
+      transform: rotate(45deg);
+    }
+
     /* Extra small devices \(portrait phones, less than 576px) */
     @media (max-width: 575.98px) {
       body {}
@@ -219,7 +275,17 @@
     <div class="top-title">
       <div class="row">
         <div class="col-5">김용준<br>Kevin</div>
-        <div class="col-2">5/22</div>
+        <div class="col-2">
+          <div class="test">
+            <div class="date">
+              <div class="month">05</div>
+              <div class="divider">
+                <div class="divider2"></div>
+              </div>
+              <div class="day">22</div>
+            </div>
+          </div>
+        </div>
         <div class="col-5">승서영<br>May</div>
       </div>
     </div>
@@ -254,8 +320,7 @@
       </div>
 
       <div class="newlyweds_phones" style="padding: 20px 0px 20px 0px;background-color: #eceae9;">
-        <!-- 2px 안주고 맞추는 방법? -->
-        <div style="margin-left: 2px;">
+        <div style="margin-left: 3px;">
           <span style="letter-spacing: 1.5px;">김성운 · 임영자</span>
           <span class="of-child">
             <span>의</span>
@@ -352,148 +417,156 @@
     </div>
 
     <div class="gallery">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">갤러리</div>
-          <div class="section-desc">GALLERY</div>
-
-          <div class="row">
-            <a href="images/image1.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image1.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image2.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image2.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image4.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image4.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image5.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image5.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image6.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image6.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image7.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image7.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image8.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image8.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image9.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image9.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image10.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image10.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image11.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image11.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image12.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image12.jpeg" class="img-fluid card">
-            </a>
-            <a href="images/image6.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
-              class="col-lg-4 col-md-4 col-4 my-4">
-              <img src="images/image7.jpeg" class="img-fluid card">
-            </a>
-          </div>
-        </div>
+      <div>
+        <div class="section-title">갤러리</div>
+        <div class="section-desc">GALLERY</div>
       </div>
 
-      <div class="transfortation">
+      <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="section-title">오시는 길</div>
-            <div class="section-desc">LOCATION</div>
-            <div style="margin-top: 40px;margin-bottom: 20px;">
-              <div>드레스가든 4층 블리스돔</div>
-              <div style="color: #797979;font-size: 0.9rem;">서울 강남구 영동대로 707</div>
-            </div>
+          <div class="col-4">
+            <a href="images/image1.jpeg">
+              <img src="images/image1.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image2.jpeg">
+              <img src="images/image2.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image4.jpeg">
+              <img src="images/image4.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image5.jpeg">
+              <img src="images/image5.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image6.jpeg">
+              <img src="images/image6.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image7.jpeg">
+              <img src="images/image7.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image8.jpeg">
+              <img src="images/image8.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image9.jpeg">
+              <img src="images/image9.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image10.jpeg">
+              <img src="images/image10.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image11.jpeg">
+              <img src="images/image11.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image12.jpeg">
+              <img src="images/image12.jpeg" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="images/image6.jpeg">
+              <img src="images/image6.jpeg" class="img-fluid" />
+            </a>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div id="map" style="width:100%;height:300px;"></div>
+    <div class="transfortation">
+      <div class="section-title">오시는 길</div>
+      <div class="section-desc">LOCATION</div>
+      <div style="margin-top: 40px;margin-bottom: 20px;">
+        <div>드레스가든 4층 블리스돔</div>
+        <div style="color: #797979;font-size: 0.9rem;">서울 강남구 영동대로 707</div>
+      </div>
 
-        <div class="t-container">
-          <div class="t-title">지하철</div>
-          <div class="t-content">7호선
-            <span style="font-weight: bold;">청담역</span>
-            하차
-            <br>12번 출구 도보 1분
-            <br>13번 출구 도보 150m
-          </div>
-        </div>
+      <div id="map" style="width:100%;height:300px;"></div>
 
-        <div class="t-container">
-          <div class="t-title">버 스</div>
-          <div class="t-content">청담역, 경기고교 정류장 하차
-            <br>지선버스 : 2413, 3217, 4318
-            <br>간선버스 : 143, 146, 352
-            <br>광역버스 : 9407, 9507, 9607
-          </div>
-        </div>
-
-        <div class="t-container">
-          <div class="t-title">자가용</div>
-          <div class="t-content">건물 내 <u>2시간</u> 무료주차</div>
+      <div class="t-container">
+        <div class="t-title">지하철</div>
+        <div class="t-content">7호선
+          <span style="font-weight: bold;">청담역</span>
+          하차
+          <br>12번 출구 도보 1분
+          <br>13번 출구 도보 150m
         </div>
       </div>
 
-      <div style="padding: 0 60px;margin-top: 100px;">
-        <div style="color: #a96b6d;margin-bottom: 10px;">마음 전하실 곳</div>
-
-        <div style="margin-bottom: 30px;font-size: 0.8rem;line-height: 1.4rem;">참석이 어려우신 분들은<br>축하의 마음을 전달해주세요.</div>
-
-        <table class="table table-responsive">
-          <tbody>
-            <tr class="account-table-header">
-              <td colspan="2" style="color: #63463c;">신랑측 계좌번호</td>
-            </tr>
-            <tr class="account-table-item">
-              <td>카카오뱅크 3333-01-1587857<br>김성운</td>
-              <td>
-                <button class="btn-copy" onclick="copyToClipboard('카뱅 3333-01-1587857 김성운')">복사하기</button>
-              </td>
-            </tr>
-            <tr class="account-table-item">
-              <td>카카오뱅크 3333-01-1587857<br>김용준</td>
-              <td>
-                <button class="btn-copy" onclick="copyToClipboard('카뱅 3333-01-1587857 김용준')">복사하기</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table class="table table-responsive">
-          <tbody>
-            <tr class="account-table-header">
-              <td colspan='2' style="color: #63463c;">신부측 계좌번호</td>
-            </tr>
-            <tr class="account-table-item">
-              <td>하나 177-890254-22207<br>승도현</td>
-              <td>
-                <button class="btn-copy" onclick="copyToClipboard('하나 177-890254-22207 승도현')">복사하기</button>
-              </td>
-            </tr>
-            <tr class="account-table-item">
-              <td>카카카오뱅크 3333-01-1587857<br>승서영</td>
-              <td>
-                <button class="btn-copy" onclick="copyToClipboard('카뱅 3333-01-1587857 승서영')">복사하기</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="t-container">
+        <div class="t-title">버 스</div>
+        <div class="t-content">청담역, 경기고교 정류장 하차
+          <br>지선버스 : 2413, 3217, 4318
+          <br>간선버스 : 143, 146, 352
+          <br>광역버스 : 9407, 9507, 9607
+        </div>
       </div>
+
+      <div class="t-container">
+        <div class="t-title">자가용</div>
+        <div class="t-content">건물 내 <u>2시간</u> 무료주차</div>
+      </div>
+    </div>
+
+    <div style="padding: 60px 60px;">
+      <div style="color: #a96b6d;margin-bottom: 10px;">마음 전하실 곳</div>
+
+      <div style="margin-bottom: 30px;font-size: 0.8rem;line-height: 1.4rem;">참석이 어려우신 분들은<br>축하의 마음을 전달해주세요.</div>
+
+      <table class="table table-responsive">
+        <tbody>
+          <tr class="account-table-header">
+            <td colspan="2" style="color: #63463c;">신랑측 계좌번호</td>
+          </tr>
+          <tr class="account-table-item">
+            <td>카카오뱅크 3333-01-1587857<br>김성운</td>
+            <td>
+              <button class="btn-copy" onclick="copyToClipboard('카뱅 3333-01-1587857 김성운')">복사하기</button>
+            </td>
+          </tr>
+          <tr class="account-table-item">
+            <td>카카오뱅크 3333-01-1587857<br>김용준</td>
+            <td>
+              <button class="btn-copy" onclick="copyToClipboard('카뱅 3333-01-1587857 김용준')">복사하기</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-responsive">
+        <tbody>
+          <tr class="account-table-header">
+            <td colspan='2' style="color: #63463c;">신부측 계좌번호</td>
+          </tr>
+          <tr class="account-table-item">
+            <td>하나 177-890254-22207<br>승도현</td>
+            <td>
+              <button class="btn-copy" onclick="copyToClipboard('하나 177-890254-22207 승도현')">복사하기</button>
+            </td>
+          </tr>
+          <tr class="account-table-item">
+            <td>카카카오뱅크 3333-01-1587857<br>승서영</td>
+            <td>
+              <button class="btn-copy" onclick="copyToClipboard('카뱅 3333-01-1587857 승서영')">복사하기</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="share-link" style="background-color: #fff;">
