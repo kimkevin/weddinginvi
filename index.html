@@ -436,11 +436,14 @@
         </table>
       </div>
 
+      <button onclick="sendLink()">카카오톡 공유하기</button>
       <button onclick="copyToClipboard('https://wemayvin.github.io')">청첩장 주소 복사하기</button>
     </div>
   </div>
 
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qqibacvqv0"></script>
+
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
   <!-- 제이쿼리 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -452,6 +455,19 @@
     crossorigin="anonymous"></script>
 
   <script>
+    Kakao.init("94ce40eafab4919d1e1a802149248104");
+
+    function sendLink() {
+      Kakao.Link.sendCustom({
+        templateId: 74937,
+        templateArgs: {
+          title: "test",
+          description: "test1",
+          url: "https://kimkevin.github.io/weddinginvi",
+        },
+      });
+    }
+
     function copyToClipboard(text) {
       /* Copy the text inside the text field */
       const t = document.createElement("textarea");
