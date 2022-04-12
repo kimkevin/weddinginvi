@@ -37,6 +37,10 @@
       margin: 0 auto;
     }
 
+    div {
+      line-height: 2rem;
+    }
+
     tr,
     td {
       border: 0 !important;
@@ -55,35 +59,51 @@
       padding: 48px 0px 48px 0px;
     }
 
-    .invitation_msg {
-      background-color: #f3f3f3;
-    }
-
     .section-title {
       color: #a96b6d;
       line-height: 2.0rem;
       font-size: 1.3rem;
+      letter-spacing: 1px;
     }
 
     .section-subtitle {
       color: #a96b6d;
       line-height: 2.0rem;
       font-size: 0.9rem;
+      letter-spacing: .18rem;
     }
 
     .section-desc {
       color: #a96b6d;
       line-height: 2.0rem;
       font-size: 0.5rem;
+      letter-spacing: .18rem;
+    }
+
+    .calendar {
+      padding: 64px 0;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .invitation-msg {
+      padding-top: 64px;
+      margin-bottom: 64px;
+      background-color: #f3f3f3;
+    }
+
+    .gallery {
+      padding: 64px 0;
     }
 
     .transfortation {
-      text-align: left;
-      padding: 0 36px;
+      padding: 64px 0;
     }
 
     .transfortation .t-container {
       margin-top: 24px;
+      padding: 0 36px;
+      text-align: left;
     }
 
     .transfortation .t-title {
@@ -169,13 +189,13 @@
       <div style="line-height: 2rem;">드레스가든 4층 블리스돔</div>
     </div>
 
-    <div class="invitation_msg">
-      <div style="padding-top: 64px;padding-bottom: 64px;">
-        <div style="color: #a96b6d;font-size: 0.8rem;">2022.05.22</div>
-        <div style="color: #a96b6d;font-size: 1.3rem;padding-top: 10px;">초대합니다</div>
+    <div class="invitation-msg">
+      <div>
+        <div class="section-subtitle">2022.05.22</div>
+        <div class="section-title">초대합니다</div>
       </div>
 
-      <div style="line-height: 2rem;font-size: 0.9rem;">
+      <div style="margin-top: 64px; font-size: 0.9rem;">
         <div>초록빛 싱그러움 가득한 5월의 봄날
           <br>두 사람이 같은 곳을 바라보며
           <br>평생 함께 걷고자 합니다.
@@ -193,14 +213,12 @@
         <div>김성운 • 임영자 의 아들 용준</div>
         <div>승도현 • 김옥영 의 딸 서영</div>
       </div>
-
     </div>
 
-    <div style="padding-top: 64px;padding-bottom: 64px;margin-left: 30px;margin-right: 30px;">
-
+    <div class="calendar">
       <div style="padding: 20px 0;">
-        <div class="section_title">5월 22일</div>
-        <div class="section_subtitle">일요일 오후 2시 30분</div>
+        <div class="section-title">5월 22일</div>
+        <div class="section-subtitle">일요일 오후 2시 30분</div>
       </div>
 
       <div style="border-top: 1px solid #ddcccc;border-bottom: 1px solid #ddcccc;padding: 0 16px;line-height: 2.0rem;">
@@ -278,7 +296,7 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title">갤러리</div>
-          <div class="section-desc">G A L L E R Y</div>
+          <div class="section-desc">GALLERY</div>
 
           <div class="row">
             <a href="images/image1.jpeg" data-toggle="lightbox" data-gallery="example-gallery"
@@ -333,22 +351,20 @@
         </div>
       </div>
 
-      <div class="transfort">
+      <div class="transfortation">
         <div class="row">
           <div class="col-12">
             <div class="section-title">오시는 길</div>
-            <div class="section-desc">L O C A T I O N</div>
-            <div>
+            <div class="section-desc">LOCATION</div>
+            <div style="margin-top: 40px;margin-bottom: 20px;">
               <div>드레스가든 4층 블리스돔</div>
-              <div>서울 강남구 영동대로 707</div>
+              <div style="color: #797979;font-size: 0.9rem;">서울 강남구 영동대로 707</div>
             </div>
-
-            <div id="map" style="width:100%;height:300px;"></div>
           </div>
         </div>
-      </div>
 
-      <div class="transfortation">
+        <div id="map" style="width:100%;height:300px;"></div>
+
         <div class="t-container">
           <div class="t-title">지하철</div>
           <div class="t-content">7호선
@@ -373,7 +389,6 @@
           <div class="t-content">입력해야함(x)</div>
         </div>
       </div>
-
 
       <div style="padding: 0px 30px 0px 30px;margin-top: 100px;">
         <div style="margin-bottom: 10px;">마음 전하실 곳</div>
