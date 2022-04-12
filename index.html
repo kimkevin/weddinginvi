@@ -47,16 +47,18 @@
     }
 
     .app {
-      background-color: #fff;
+      background-color: #f3f3f3;
       color: #333;
     }
 
     .top-title {
       padding: 48px 16px 48px 16px;
+      background-color: #fff;
     }
 
     .date-place {
       padding: 48px 0px 48px 0px;
+      background-color: #fff;
     }
 
     .section-title {
@@ -142,6 +144,27 @@
       border-radius: 30px;
     }
 
+    .btn-copy {
+      background: #f2efed;
+      color: #e56623;
+      border-radius: 2px;
+      font-size: 12px;
+      line-height: 24px;
+      border: none;
+      font-weight: bold;
+    }
+
+    .share-link {
+      padding: 50px 0;
+    }
+
+    .button-share {
+      background: none;
+      font-size: 12px;
+      line-height: 24px;
+      border: none;
+    }
+
     /* Extra small devices \(portrait phones, less than 576px) */
     @media (max-width: 575.98px) {
       body {}
@@ -209,7 +232,7 @@
         <img class="img-fluid" src="images/image_sub.png" alt="...">
       </div>
 
-      <div class="newlyweds_phones" style="padding: 20px 0px 20px 0px;">
+      <div class="newlyweds_phones" style="padding: 20px 0px 20px 0px;background-color: #eceae9;">
         <div>김성운 • 임영자 의 아들 용준</div>
         <div>승도현 • 김옥영 의 딸 서영</div>
       </div>
@@ -395,23 +418,23 @@
 
         <div style="margin-bottom: 30px;">참석이 어려우신 분들은<br>축하의 마음을 전달해주세요.</div>
 
-        <table class="table table-responsive">
+        <table class="table table-responsive"">
           <tbody>
-            <tr style="background-color: #eae6e3;">
-              <td colspan="2" style="color: #63463c;">신랑측 계좌번호</td>
-            </tr>
-            <tr style="background-color: #fff;">
-              <td style="text-align: left;">카뱅 3333-01-1587857<br>김성운</td>
-              <td>
-                <button onclick="copyToClipboard('카뱅 3333-01-1587857 김성운')">복사하기</button>
-              </td>
-            </tr>
-            <tr style="background-color: #fff;">
-              <td style="text-align: left;">카뱅 3333-01-1587857<br>김용준</td>
-              <td>
-                <button onclick="copyToClipboard('카뱅 3333-01-1587857 김용준')">복사하기</button>
-              </td>
-            </tr>
+            <tr style=" background-color: #eae6e3;">
+          <td colspan="2" style="color: #63463c;">신랑측 계좌번호</td>
+          </tr>
+          <tr style="background-color: #fff;">
+            <td style="text-align: left;">카뱅 3333-01-1587857<br>김성운</td>
+            <td>
+              <button class="btn-copy" onclick="copyToClipboard('카뱅 3333-01-1587857 김성운')">복사하기</button>
+            </td>
+          </tr>
+          <tr style="background-color: #fff;">
+            <td style="text-align: left;">카뱅 3333-01-1587857<br>김용준</td>
+            <td>
+              <button class="btn-copy" onclick="copyToClipboard('카뱅 3333-01-1587857 김용준')">복사하기</button>
+            </td>
+          </tr>
           </tbody>
         </table>
 
@@ -423,22 +446,26 @@
             <tr style="background-color: #fff;">
               <td style="text-align: left;">하나 177-890254-22207<br>승도현</td>
               <td>
-                <button onclick="copyToClipboard('하나 177-890254-22207 승도현')">복사하기</button>
+                <button class="btn-copy" onclick="copyToClipboard('하나 177-890254-22207 승도현')">복사하기</button>
               </td>
             </tr>
             <tr style="background-color: #fff;">
               <td style="text-align: left;">카뱅 3333-01-1587857<br>승서영</td>
               <td>
-                <button onclick="copyToClipboard('카뱅 3333-01-1587857 승서영')">복사하기</button>
+                <button class="btn-copy" onclick="copyToClipboard('카뱅 3333-01-1587857 승서영')">복사하기</button>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
+    </div>
 
+    <div class="share-link" style="background-color: #fff;">
       <div>
-        <button onclick="sendLink()">카카오톡으로 공유하기</button>
-        <button onclick="copyToClipboard('https://wemayvin.github.io')">청첩장 주소 복사하기</button>
+        <button class="button-share" onclick="sendLink()">카카오톡으로 공유하기</button>
+      </div>
+      <div>
+        <button class="button-share" onclick="copyToClipboard('https://wemayvin.github.io')">청첩장 주소 복사하기</button>
       </div>
     </div>
   </div>
